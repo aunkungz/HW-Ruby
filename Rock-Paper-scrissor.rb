@@ -15,55 +15,64 @@ def game
 
 		else
 
-			if player == 0 && bot == 0
+			if player == 1 && bot == 1
+				puts "Rock Vs Rock"
 				puts "Draw"
 				player_score = player_score
 				bot_score = bot_score
 
-				elsif player == 0 && bot == 1
+				elsif player == 1 && bot == 2
+				puts "Rock Vs Paper"	
 				puts "You lose"
 				player_score = player_score
 				bot_score = bot_score+1
 
 
-				elsif player == 0 && bot == 2
+				elsif player == 1 && bot == 3
+				puts "Rock Vs Scrissor"
 				puts "You Win"
 				player_score = player_score+1
 				bot_score = bot_score
 
 
-				elsif player == 1 && bot == 0
+				elsif player == 2 && bot == 1
+				puts "Paper Vs Rock"	
 				puts "You Win"
 				player_score = player_score+1
 				bot_score = bot_score
 
 					
-				elsif player == 1 && bot == 1
+				elsif player == 2 && bot == 2
+				puts "Paper Vs Paper"	
 				puts "Draw"
 				player_score = player_score
 				bot_score = bot_score
 
 
-				elsif player == 1 && bot ==  2
+				elsif player == 2 && bot ==  3
+				puts "Paper Vs Scrissor"	
 				puts "You lose"
 				player_score = player_score
 				bot_score = bot_score+1
 
 
 
-				elsif player == 2 && bot ==  0
+				elsif player == 3 && bot ==  1
+				puts "Scrissor Vs Rock"	
 				puts "You lose"
 				player_score = player_score
 				bot_score = bot_score+1
 
 
-				elsif player == 2 && bot ==  1
+				elsif player == 3 && bot ==  2
+				puts "Scrissor Vs Paper"	
 				puts "You Win"
 				player_score = player_score+1
 				bot_score = bot_score
 
 
-				elsif player == 2 && bot ==  2
+				elsif player == 3 && bot ==  3
+				puts "Scrissor Vs Scrissor"	
 				puts "Draw"
 				player_score = player_score
 				bot_score = bot_score
@@ -78,7 +87,7 @@ def game
 	end
 
 	if  player_score == 2
-		puts "The Winner Is : Player"
+		puts "The Winner Is : Player !!!!"
 	
 	else
 		puts "The Winner Is : Bot" 
